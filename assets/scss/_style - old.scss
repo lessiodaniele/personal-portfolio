@@ -21,24 +21,6 @@
     /* ... altre classi per le colonne ... */
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-$font-stack: 'Inter', sans-serif;
-$accent-color: #e65a37;
-$primary-color: #18678b;
-$secondary-color: #e78719;
-$black-color: #0f0f0f;
-$white-color: #f0f0f0;
-
-:focus {
-  outline: .375rem double black;
-  box-shadow: 0 0 0 .25rem white;
-  border-radius: .125rem;
-}
    
 html {
     font-family: $font-stack;

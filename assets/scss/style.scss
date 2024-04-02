@@ -10,6 +10,21 @@
 // .dark-mode-toggle.active {
 //     background-color: #000;
 // }
+/* ! Reset */
+
+body, html{ font-family: $font-stack, Arial, Helvetica, sans-serif; font-size: 16px; box-sizing: border-box; margin: 0; padding: 0;}
+*,*:before,*:after{ box-sizing: border-box; }
+h1,h2,h3,h4,h5,h6, p, ol, ul {margin: 0;padding: 0;}
+ol,ul {list-style-type: none;}
+img{height: auto;}
+h1{font-size: 4rem;} 
+// h2{font-size: 2rem;} 
+// h3{font-size: 1rem;} 
+// h4{font-size: 1rem;}
+// h5{font-size: 0.8rem;}
+// h6{font-size: 0.6rem;}
+a{text-decoration:none}
+
 * {
     padding: 0;
     margin: 0;
@@ -45,27 +60,13 @@ a {
     color: $black-color;
 }
 body {
-    font-family: $font-stack;
-    background-color: $white-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-family: $font-stack; background-color: $white-color; display: flex; flex-direction: column; justify-content: center;
     // max-width: 480px;
     // width: 100%;
 }
 
 // @note HEADER
-.nav-container{
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    gap: 20px;
-    font-size: 16px;
-    color: #000;
-    font-weight: 400;
-    line-height: 112.5%;
-    padding: 20px 20px 0;
+.nav-container{ justify-content: space-between;    align-items: center;    display: flex;    width: 100%;    gap: 20px;    font-size: 16px;    color: #000;    font-weight: 400; line-height: 112.5%;    padding: 20px 20px 0;
     .logo {
         width: 40px;
         height: 40px;
@@ -139,7 +140,7 @@ body {
     .project-card{
         position: relative;
         padding: 20px;
-    
+        
         .project-label {
             color: $white-color;
             background-color: $accent-color;
@@ -167,3 +168,6 @@ body {
             border-radius: 20px;
         }
 }
+
+.card{padding:20px;box-shadow: 0 5px 20px rgba(0,0,0,.1);border-radius: 10px;overflow: hidden;margin: 0 15px 30px 15px; min-height: 450px; max-width: 480px;}
+.card__img{min-height:200px; display: block;background-position: center center; background-size:cover;margin: -20px -20px 20px -20px;}

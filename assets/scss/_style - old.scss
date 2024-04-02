@@ -1,0 +1,117 @@
+@use 'config';
+@use 'headings';
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css?family=Inter');
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* Stili per smartphone */
+    .col-s-1 { width: 100%; }
+}
+@media only screen and (min-width: 481px) {
+    /* Stili per tablet */
+    .col-s-1 { width: 10%; }
+    .col-s-2 { width: 90%; }
+}
+@media only screen and (min-width: 768px) {
+    /* Stili per desktop */
+    /* Ad esempio: */
+    .col-1 { width: 8.33%; }
+    /* ... altre classi per le colonne ... */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$font-stack: 'Inter', sans-serif;
+$accent-color: #e65a37;
+$primary-color: #18678b;
+$secondary-color: #e78719;
+$black-color: #0f0f0f;
+$white-color: #f0f0f0;
+
+:focus {
+  outline: .375rem double black;
+  box-shadow: 0 0 0 .25rem white;
+  border-radius: .125rem;
+}
+   
+html {
+    font-family: $font-stack;
+    font-size: 10px;
+    line-height: 1.625;
+    background-color: $white-color;
+
+    body {
+        background-color: $white-color;
+        display: flex;
+        max-width: 480px;
+        width: 100;
+        flex-direction: column;
+        margin: 0 auto;
+        nav {
+            justify-content: space-between;
+            align-items: start;
+            background-color: $white-color;
+            display: flex;
+            width: 100%;
+            gap: 20px;
+            font-size: 16px;
+            color: #000;
+            font-weight: 400;
+            line-height: 112.5%;
+            padding: 20px 20px 0;
+            .logo {
+                width: 40px;
+            }
+            div {
+                .icon {
+                    aspect-ratio: 1;
+                    object-fit: auto;
+                    object-position: center;
+                    width: 35px;
+                    fill: #000;
+                    align-self: stretch;
+                    margin: auto 0;
+                  }
+                  .btn-contact {
+                    font-family: Inter, sans-serif;
+                    justify-content: center;
+                    border-radius: 10px;
+                    background-color: var(--Accent, #fb43b0);
+                    align-self: stretch;
+                    white-space: nowrap;
+                    padding: 10px;
+                  }
+                  .about-link {
+                    font-family: $font-stack;
+                    align-self: stretch;
+                    margin: auto 0;
+                    }
+                }
+
+
+
+
+        }
+        h1 {
+        font-size: 3em;
+        }
+        h2 {
+        font-size: 2em;
+        }
+    } 
+
+
+.card {
+    background: none;
+    border: none;
+    .card-img-top {
+        border-radius: 25px;
+    }
+    }
+}

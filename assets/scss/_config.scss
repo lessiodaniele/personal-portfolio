@@ -1,0 +1,25 @@
+
+
+/*Toggle dark mode
+
+<button id="dark-mode-toggle">💡</button>
+<!--script per la dark Mode-->
+<script>
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+    });
+</script>
+
+Stile per la modalità light
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+Stile per la modalità dark
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}*/

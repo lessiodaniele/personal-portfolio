@@ -1,0 +1,147 @@
+// .dark-mode-toggle {
+//     background-color: #333;
+//     color: #fff;
+//     border: none;
+//     padding: 8px 16px;
+//     cursor: pointer;
+// }
+
+// /* Stile del pulsante quando è attivo (modalità scura) */
+// .dark-mode-toggle.active {
+//     background-color: #000;
+// }
+
+.inter-typo {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
+$font-stack: 'Inter', sans-serif;
+$accent-color: #FB43B0;
+$primary-color: #18678b;
+$secondary-color: #4962E9;
+$black-color: #0f0f0f;
+$white-color: #f0f0f0;
+
+a {
+    text-decoration: none;
+    color: $black-color;
+}
+body {
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: $font-stack;
+    background-color: $white-color;
+}
+
+// @note HEADER
+.nav-container{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    line-height: 112.5%;
+    padding: 20px 20px 0;
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+  
+    li, ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;  
+    }
+    .menu-container {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        .dark-mode-toggle{
+            aspect-ratio: 1;
+            width: 25px;
+        }
+        button {
+            font-family: $font-stack;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: $accent-color;
+            color: $white-color;
+            align-self: stretch;
+            white-space: nowrap;
+            padding: 10px;
+          }
+    }
+    }
+    
+    .hero {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding: 40px 20px 0;
+        .tag {
+          justify-content: center;
+          border-radius: 10px;
+          background-color: $accent-color;
+          align-self: start;
+          background-color: $secondary-color;
+          padding: 10px;
+          font: 400 16px/112.5% Inter, sans-serif;
+        }
+    }
+    .links {
+        align-items: start;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        .social-icons {
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+        }
+        .link-linkedin,
+        .link-behance,
+        .link-pinterest {
+          aspect-ratio: 1;
+          object-fit: auto;
+          object-position: center;
+          width: 30px;
+          }
+        }
+      
+    .project-card{
+        position: relative;
+        padding: 20px;
+
+        .label-text{
+            margin: 0;
+        }
+        .project-label {
+            color: $white-color;
+            background-color: $black-color;
+            position: absolute;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 200px;
+        }
+        .project-image{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }

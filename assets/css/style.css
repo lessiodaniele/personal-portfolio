@@ -13,13 +13,11 @@
   font-variation-settings: "slnt" 0;
 }
 
-body, html {
-  font-family: "Inter", sans-serif, Arial, Helvetica, sans-serif;
+body {
   background-color: #f0f0f0;
+  font-family: "Inter", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 16px;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  width: 100%;
 }
 
 a {
@@ -92,10 +90,10 @@ h1 {
 }
 
 .hero {
-  display: flex;
   width: 100%;
   flex-direction: column;
   padding: 40px 20px 0;
+  display: flex;
 }
 .hero .tag {
   background-color: #FB43B0;

@@ -46,7 +46,6 @@ body {
     background-color: $white-color;
     font-family: $font-stack, Arial, Helvetica, sans-serif;
     font-size: 16px;
-    width: 100%;
 }
 a {
     text-decoration: none;
@@ -64,10 +63,18 @@ h1{font-size: 4rem;}
 // h6{font-size: 0.6rem;}
 
 // @note HEADER
-.nav-container{ justify-content: space-between;    align-items: center;    display: flex;    width: 100%;    gap: 20px;    font-size: 16px;    color: #000;    font-weight: 400; line-height: 112.5%;    padding: 20px 20px 0;
+.nav-container{ 
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: space-between;
+    color: #000;
+    font-weight: 400;
+    padding: 20px 20px 0;
     .logo {
         width: 40px;
-        height: 40px;
     }
   
     li, ul{
@@ -99,18 +106,18 @@ h1{font-size: 4rem;}
     }
     
 .hero {
-    width: 100%;
-    flex-direction: column;
-    padding: 40px 20px 0;
+    // width: 100%;
     display: flex;
+    flex-direction: column;
+    
         .tag {
             background-color: $accent-color;
             background-color: $secondary-color;
-          justify-content: center;
-          align-self: start;
-          border-radius: 10px;
-          padding: 10px;
-          font: 400 16px/112.5% Inter, sans-serif;
+            border-radius: 10px;
+            padding: 10px;
+            font: $font-stack, sans-serif;
+            justify-content: center;
+            align-self: start;
         }
     }
     .links {
@@ -119,7 +126,6 @@ h1{font-size: 4rem;}
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        padding: 0 20px;
         .social-icons {
         justify-content: center;
         display: flex;
@@ -135,37 +141,57 @@ h1{font-size: 4rem;}
           }
         }
       
-    .project-card{
-        position: relative;
-        padding: 20px;
+    // .project-card{
+    //     position: relative;
+        // padding: 20px;
         
-        .project-label {
-            color: $white-color;
-            background-color: $accent-color;
-            display: flex;
-            position: absolute;
-            margin: 20px;
-            padding: 0 10px;
-            width: 180px;
-            justify-content: center;
-            opacity: 90%;
-            gap: 1em;
-            // filter: blur(5px);
+//         .project-label {
+//             display: flex;
+//             color: $white-color;
+//             background-color: $accent-color;
+//             position: absolute;
+//             margin: 20px;
+//             padding: 0 10px;
+//             width: 180px;
+//             justify-content: center;
+//             opacity: 90%;
+//             gap: 1em;
+//             // filter: blur(5px);
             
-            .label-text{
-                align-self: center;
-                margin: 0;
-            }
-            .label-icon {
-                align-self: center;
-                width: 30px;
-            }
-        }
-        .project-image{
-            width: 100%;
-            border-radius: 10px;
-        }
+//             .label-text{
+//                 align-self: center;
+//                 margin: 0;
+//             }
+//             .label-icon {
+//                 align-self: center;
+//                 width: 30px;
+//             }
+        
+//         .project-image{
+//             width: 100%;
+//             border-radius: 10px;
+//         }
+
+.projects {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
 }
 
-.card{padding:20px;box-shadow: 0 5px 20px rgba(0,0,0,.1);border-radius: 10px;overflow: hidden;margin: 0 15px 30px 15px; min-height: 450px; }
-.card__img{min-height:200px; display: block;background-position: center center; background-size:cover;margin: -20px -20px 20px -20px;}
+.card{
+    padding:40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    border-radius: 10px;
+    overflow: hidden;   // maschera l'immagine con la card
+    // margin: 0 15px 30px 15px;
+    // min-height: 450px; 
+}
+.card__img{
+    min-height:200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    background-position: center center;
+    background-size:cover;
+    margin: -20px -20px 20px -20px;
+}

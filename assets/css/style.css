@@ -169,3 +169,14 @@ h6 {
   display: flex;
   justify-content: center;
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: #0f0f0f;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

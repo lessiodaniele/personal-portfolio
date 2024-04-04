@@ -1,17 +1,3 @@
-// .dark-mode-toggle {
-//     background-color: #333;
-//     color: #fff;
-//     border: none;
-//     padding: 8px 16px;
-//     cursor: pointer;
-// }
-
-// /* Stile del pulsante quando è attivo (modalità scura) */
-// .dark-mode-toggle.active {
-//     background-color: #000;
-// }
-/* ! Reset */
-
 * {
     padding: 0;
     margin: 0;
@@ -40,7 +26,7 @@ $accent-color: #FB43B0;
 $primary-color: #18678b;
 $secondary-color: #4962E9;
 $black-color: #0f0f0f;
-$white-color: #f0f0f0;
+$white-color: #fdfdfd;
 
 body { 
     background-color: $white-color;
@@ -50,6 +36,13 @@ body {
 a {
     text-decoration: none;
     color: $black-color;
+    :hover{
+        color: $accent-color;
+    }
+    :active{
+        color: $secondary-color;
+
+    }
 }
 *,*:before,*:after{ box-sizing: border-box; }
 h1,h2,h3,h4,h5,h6, p, ol, ul {margin: 0;padding: 0;}
@@ -81,9 +74,9 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
         align-items: center;
         display: flex;
         gap: 10px;
-        .toggle-button {
-            aspect-ratio: 1;
-            width: 25px;
+        // .toggle-dark {
+        //     aspect-ratio: 1;
+        //     width: 25px;
         }
         .btn {
         font-family: $font-stack;
@@ -94,19 +87,32 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
         align-self: stretch;
         white-space: nowrap;
         padding: 5px;
-      }}}
+      }}
     
 .hero {
     display: flex;
     flex-direction: column;
-        .tag {
-            background-color: $accent-color;
-            background-color: $secondary-color;
+    padding: 0px;
+        .tags {
+            display: flex;
+            font-size: xx-small;
+            gap: 10px;
+            color: $white-color;
             border-radius: 10px;
-            padding: 10px;
-            font: $font-stack, sans-serif;
             justify-content: center;
             align-self: start;
+            .tag-1 {
+                background-color: $secondary-color;
+                padding: 10px;
+                border-radius: 10px;
+
+            }
+            .tag-2{
+                background-color: $secondary-color;
+                padding: 10px;
+                border-radius: 10px;
+
+            }
         }}
     .links {
         align-items: start;
@@ -117,6 +123,7 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
         .social-icons {
         justify-content: center;
         display: flex;
+        margin-top: 20px;
         gap: 10px;
         }
         .link-linkedin,
@@ -128,42 +135,14 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
           width: 30px;
           }}
       
-    // .project-card{
-    //     position: relative;
-        // padding: 20px;
-        
-        // .project-label {
-            // display: flex;
-            // color: $black-color;
-//             background-color: $accent-color;
-//             position: absolute;
-//             margin: 20px;
-//             padding: 0 10px;
-//             width: 180px;
-//             justify-content: center;
-//             opacity: 90%;
-//             gap: 1em;
-//             // filter: blur(5px);
-//             .label-text{
-//                 align-self: center;
-//                 margin: 0;
-//             }
-
-
-// .projects {
-//     display: flex;
-//     justify-items: center;
-//     justify-content: center;
-// }
 .projects-section {
     padding: 0;
     .card{
-        padding:40px;
+        padding: 40px;
         border-radius: 10px;
         overflow: hidden;   // maschera l'immagine con la card
         background-color: transparent;
         border: none;
-        height: auto;
         // margin: 0 15px 30px 15px;
         // min-height: 450px; 
         
@@ -177,25 +156,40 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
             margin: -20px -20px 20px -20px;
         }}}
 .card:hover {
-            background-color: white;
-            box-shadow: 0 5px 20px rgba(0,0,0,.1);
-            transform: scale(1.1); /* Modifica la grandezza dell'immagine */
-            transition: transform 0.2s ease; 
-            // transition: transform 0.5s cubic-bezier(1,0,0,1);
-        }
-        
-        
-        .altro {
-            display: flex;
-            justify-content: center;
-        }
-        footer{
-            display: flex;
-            justify-content: space-between;
-            color: $black-color;
-            ul{
-                list-style-type: none;
-                padding: 0;
-                margin: 0;  
-            }
-        }
+    color: $accent-color;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    transform: scale(1.1); /* Modifica la grandezza dell'immagine */
+    transition: transform 0.2s ease; 
+    z-index: 2;
+    // transition: transform 0.5s cubic-bezier(1,0,0,1);
+}
+.card:active{
+    color: $secondary-color;
+}
+.altro {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+footer{
+    background-color: #18678b1e;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    color: $black-color;
+    margin-top: 20px;
+    padding: 40px;
+    p{
+        color: $black-color;
+        font-size:smaller;
+        opacity: 80%;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;  
+    }
+}
+

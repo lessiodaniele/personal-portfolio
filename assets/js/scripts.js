@@ -1,6 +1,8 @@
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script>
-    function toggleDarkMode() {
-        document.body.classList.toggle("dark-mode");
-    }
-</script> 
+// Ottieni il riferimento al bottone
+const darkModeButton = document.getElementById('dark-mode-button');
+
+// Aggiungi un gestore di eventi per il clic sul bottone
+darkModeButton.addEventListener('click', () => {
+    // Inverti la modalità scura
+    document.body.classList.toggle('dark-mode');
+});

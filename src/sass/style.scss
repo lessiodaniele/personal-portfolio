@@ -1,9 +1,9 @@
+@use 'form';
 * {
     padding: 0;
-    margin: 0;
+    margin: 50;
     box-sizing: border-box;
 }
-
 // :focus {
 //     outline: .375rem double black;
 //     background-color: yellow;
@@ -193,11 +193,11 @@ footer{
     }
 }
 
-@media only screen and (max-width: 450) {
-    body {
-      .hero{
-        margin: 0;
-        color: red;
-      }
-    }
-  }
+// @media only screen and (max-width: 450) {
+//     body {
+//       .hero{
+//         margin: 0;
+//         color: red;
+//       }
+//     }
+//   }

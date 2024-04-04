@@ -5,7 +5,7 @@
     "main": "public/index.html",
     "author": "5t3ph",
     "scripts": {
-      "build:sass": "sass  --no-source-map src/sass:public/css",
+      "build:sass": "sass  --no-source-map src/sass:public/assets/css",
       "copy:pages": "copyfiles -u 1 ./personal-portfolio/src/pages/**/* public",
       "copy:portfolio": "copyfiles -u 1 ./personal-portfolio/src/portfolio/**/* public",
       "copy:assets": "copyfiles -u 1 ./personal-portfolio/src/assets/**/* public",

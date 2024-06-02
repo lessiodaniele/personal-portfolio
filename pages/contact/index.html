@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Form di Contatto</title>
-
-    <style>
-         
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 .formcarry-container {
   box-sizing: border-box;
@@ -159,7 +158,7 @@
 }
 
 .formcarry-container button:focus {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), hsla(var(--fc-primary-hsl));
+  background: linear-gradient(0deg, rgba(1, 4, 134, 0.2), rgba(40, 11, 119, 0.2)), hsla(var(--fc-primary-hsl));
   border-inline: 1px solid inline rgba(255, 255, 255, 0.6);
   box-shadow: 0px 0px 0px 3px rgba(var(--fc-primary-hsl), 12%);
 }
@@ -201,46 +200,29 @@ a {
 
     }
 }
-
     </style>
 </head>
 <body>
-    <!-- <main class="main container-sm-8 offset-sm-2">
-        <div class="indietro"><a href="https://lessiodaniele.github.io/personal-portfolio/">← torna indietro</a></div>
-        <form class="col-sm-6 col-md-8 m-3" action="https://formcarry.com/s/IP0ttKJh4VI" method="POST" >
-            <div class="row my-3">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="fullName" required>
-            </div>
-            <div class="row my-3">
-                <label for="email">Indirizzo Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="row my-3">
-                <label for="message">Messaggio:</label>
-                <textarea name="message" id="message" rows="5"></textarea>
-            </div>
-            <button type="submit">Invia</button>
-        </form>
-
-    </main> -->
     <section class="formcarry-container">
       <div class="indietro formcarry-block"><a href="https://lessiodaniele.github.io/personal-portfolio/">← torna indietro</a></div>
-    <form action="https://formcarry.com/s/IP0ttKJh4VI" method="POST" enctype="multipart/form-data">
-      
+      <form
+  action="https://formcarry.com/s/mXlt7TMidFS"
+  method="POST"
+  enctype="multipart/form-data"
+>
       <div class="formcarry-block">
         <label for="fc-generated-1-name">Nome e cognome</label>
-        <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
+        <input type="text" name="name" id="fc-generated-1-name" placeholder="Mario Rossi" />
       </div>
         
       <div class="formcarry-block">
         <label for="fc-generated-1-email">Indirizzo Email</label>
-        <input type="email" name="email" id="fc-generated-1-email" placeholder="john@doe.com" />
+        <input type="email" name="email" id="fc-generated-1-email" placeholder="esempio@mail.com" />
       </div>
         
       <div class="formcarry-block">
         <label for="fc-generated-1-message">Messaggio</label>
-        <textarea name="message" name="message" id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
+        <textarea name="message" id="fc-generated-1-message" placeholder="Scrivi qualcosa.."></textarea>
       </div>
         
       <div class="formcarry-block">  

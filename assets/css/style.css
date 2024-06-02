@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 .formcarry-container {
   box-sizing: border-box;
   margin: 40px auto 0 auto;
@@ -162,6 +163,12 @@
   box-shadow: 0px 0px 0px 3px hsla(var(--fc-error-hsl), 12%);
 }
 
+.dm-mono-medium {
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 50;
@@ -177,8 +184,8 @@
 }
 
 body {
-  background-color: #fdfdfd;
   font-family: "Inter", sans-serif, Arial, Helvetica, sans-serif;
+  background-color: #fdfdfd;
   font-size: 16px;
 }
 
@@ -197,7 +204,11 @@ a :active {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, ol, ul {
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px, 0px, 0px, 0px;
+}
+
+p, ol, ul {
   margin: 0;
   padding: 0;
 }
@@ -254,17 +265,17 @@ h6 {
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 10px;
+  gap: 24px;
 }
 .nav-container .btn {
   font-family: "Inter", sans-serif;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #FB43B0;
   color: #fdfdfd;
   align-self: stretch;
   white-space: nowrap;
-  padding: 5px;
+  padding: 4px;
 }
 
 .hero {
@@ -318,20 +329,28 @@ h1 {
   width: 36px;
 }
 
-.projects-section {
-  padding: 0;
+.cv-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
+.cv-links .github, .cv-links .linkedin {
+  width: 24px;
+}
+
 .projects-section .card {
-  padding: 40px;
-  border-radius: 10px;
+  padding: 32px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 12px;
   overflow: hidden;
-  background-color: transparent;
+  background-color: #fdfdfd;
   border: none;
+  height: fit-content;
 }
 .projects-section .card .card__img {
   min-height: 200px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   display: block;
   background-position: center center;
   background-size: cover;
@@ -341,7 +360,7 @@ h1 {
 .card:hover {
   color: #FB43B0;
   background-color: white;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transform: scale(1.1); /* Modifica la grandezza dell'immagine */
   transition: transform 0.2s ease;
   z-index: 2;

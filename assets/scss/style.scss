@@ -44,16 +44,13 @@ body {
 a {
     text-decoration: none;
     color: $black-color;
-    :hover {
-        color: $white-color;
-        background-color: $accent-dark;
-    }
     :active{
         background-color: $primary-color;
 
-    }
-}
-
+    :hover {
+            color: $white-color;
+            background-color: $accent-dark;
+        }}}
 *,*:before,*:after{ box-sizing: border-box; }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -121,7 +118,7 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
     padding: 0px;
         .tags {
             display: flex;
-            font-size: xx-small;
+            font-size: small;
             gap: 12px;
             color: $white-color;
             border-radius: 12px;
@@ -177,9 +174,7 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
         overflow: hidden;   // maschera l'immagine con la card
         background-color: $white-color;
         border: none;
-        // box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         height: fit-content;
-        // min-height: 450px; 
         .card__img{
             min-height:200px;
             border-top-left-radius: 8px;
@@ -192,11 +187,10 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
 .card:hover {
     color: $accent-color;
     background-color: $white-color;
-    box-shadow: 0 4px 20px $black-color;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     transform: scale(1.1); /* Modifica la grandezza dell'immagine */
     transition: transform 0.2s ease; 
     z-index: 2;
-    // transition: transform 0.5s cubic-bezier(1,0,0,1);
 }
 .card:active{
     color: $secondary-color;
@@ -234,7 +228,6 @@ footer{
         font-weight: 400;
         line-height: 24px;
         letter-spacing: -0.01em;
-      
         width: 400px;
       
         /* NORMAL */

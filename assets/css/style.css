@@ -299,20 +299,22 @@ h6 {
   display: flex;
   font-size: small;
   gap: 12px;
-  color: #fdfdfd;
   border-radius: 12px;
   justify-content: center;
   align-self: start;
 }
 .hero .tags .tag-1 {
-  background-color: #5688F4;
-  padding: 12px;
+  color: #5688F4;
+  border: 2px, solid #5688F4;
   border-radius: 12px;
+  padding: 3px;
 }
 .hero .tags .tag-2 {
-  background-color: #9B8DEC;
-  padding: 12px;
+  color: #9B8DEC;
+  border: 2px, solid #9B8DEC;
   border-radius: 12px;
+  padding: 3px;
+  text-align: center;
 }
 
 h1 {

@@ -29,7 +29,7 @@
   }
 
 $font-stack: 'Inter', sans-serif;
-$accent-color: #FB43B0;
+$accent-color: #6000F0;
 $accent-dark: #8d165e;
 $primary-color: #5688F4;
 $secondary-color: #9B8DEC;
@@ -51,6 +51,24 @@ a {
             color: $white-color;
             background-color: $accent-dark;
         }}}
+        
+.btn, button{
+  background-color: $accent-color;
+  font-family: $font-stack;
+  color: $white-color;
+  display: flex;
+  justify-content: center;        
+  width: auto;
+  border-radius: 12px;
+      }
+  
+.cv{
+        display: flex;
+        justify-content: center;
+  margin-top: 64px;
+  
+      }
+
 *,*:before,*:after{ box-sizing: border-box; }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -60,9 +78,7 @@ p, ol, ul {
     padding: 0;}
 ol,ul {list-style-type: none;}
 h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}
-.cv-image{
-    height: 50%;
-}
+
 // @note HEADER
 .nav-container{ 
     width: 100%;
@@ -93,24 +109,6 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
         //     width: 25px;
     }
 }
-
-.btn, button{
-        background-color: $accent-color;
-        font-family: $font-stack;
-        color: $white-color;
-        display: flex;
-        justify-content: center;        
-        width: auto;
-        border-radius: 12px;
-        white-space: nowrap;
-    }
-
-    .cv{
-        display: flex;
-        justify-content: center;
-        margin-top: 64px;
-
-    }
 
 .hero {
     display: flex;

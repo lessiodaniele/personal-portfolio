@@ -201,6 +201,22 @@ a :active :hover {
   background-color: #8d165e;
 }
 
+.btn, button {
+  background-color: #6000F0;
+  font-family: "Inter", sans-serif;
+  color: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  border-radius: 12px;
+}
+
+.cv {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -242,10 +258,6 @@ h6 {
   font-size: 0.6rem;
 }
 
-.cv-image {
-  height: 50%;
-}
-
 .nav-container {
   width: 100%;
   gap: 20px;
@@ -271,23 +283,6 @@ h6 {
   align-items: center;
   display: flex;
   gap: 24px;
-}
-
-.btn, button {
-  background-color: #FB43B0;
-  font-family: "Inter", sans-serif;
-  color: #fdfdfd;
-  display: flex;
-  justify-content: center;
-  width: auto;
-  border-radius: 12px;
-  white-space: nowrap;
-}
-
-.cv {
-  display: flex;
-  justify-content: center;
-  margin-top: 64px;
 }
 
 .hero {
@@ -372,7 +367,7 @@ h1 {
 }
 
 .card:hover {
-  color: #FB43B0;
+  color: #6000F0;
   background-color: #fdfdfd;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   transform: scale(1.1); /* Modifica la grandezza dell'immagine */

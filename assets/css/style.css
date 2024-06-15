@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 .formcarry-container {
   box-sizing: border-box;
   margin: 40px auto 0 auto;
@@ -163,24 +161,31 @@
   box-shadow: 0px 0px 0px 3px hsla(var(--fc-error-hsl), 12%);
 }
 
-.dm-mono-medium {
-  font-family: "DM Mono", monospace;
-  font-weight: 500;
-  font-style: normal;
+@font-face {
+  font-family: "U";
+  src: url("../assets/font/Inter/Inter-VariableFont_slnt,wght.ttf");
+  src: local("Inter"), url("../font/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
 }
-
 * {
   padding: 0;
   margin: 50;
   box-sizing: border-box;
 }
 
-.inter-typo {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
+.sunnee {
+  background-image: url("../../assets/img/copertina-sunnee.jpg");
+}
+
+.ecodream {
+  background-image: url("../../assets/img/copertina-ecodream.jpg");
+}
+
+.dea {
+  background-image: url("../../assets/img/Logo-dea.svg");
+}
+
+.academy {
+  background-image: url("../../assets/img/copertina-curiosity-academy.svg");
 }
 
 body {
@@ -208,6 +213,7 @@ a :active :hover {
   display: flex;
   justify-content: center;
   width: auto;
+  text-align: center;
   border-radius: 12px;
 }
 
@@ -552,5 +558,5 @@ footer {
   box-shadow: 0px 0px 0px 3px hsla(var(--fc-error-hsl), 12%);
 }
 .footer .indietro {
-  margin-bottom: 40px;
+  margin-bottom: 64px;
 }

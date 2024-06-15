@@ -1,32 +1,25 @@
-// da rivedere
 @use 'form';
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
-.dm-mono-medium {
-    font-family: "DM Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-  }
+
+@font-face {
+  font-family: 'U';
+  src: url('../assets/font/Inter/Inter-VariableFont_slnt\,wght.ttf');
+  src: local('Inter'), url('../font/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
 * {
     padding: 0;
     margin: 50;
     box-sizing: border-box;
 }
-// :focus {
-//     outline: .375rem double black;
-//     background-color: yellow;
-//     padding: 2px;
-//     box-shadow: 0 0 0 .25rem white;
-//     border-radius: .125rem;
-//   }
 
-.inter-typo {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "slnt" 0;
-  }
+// .inter-typo {
+//     font-family: "Inter", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: 400;
+//     font-style: normal;
+//     font-variation-settings:
+//       "slnt" 0;
+//   }
 
 $font-stack: 'Inter', sans-serif;
 $accent-color: #6000F0;
@@ -36,6 +29,18 @@ $secondary-color: #9B8DEC;
 $black-color: #0f0f0f;
 $white-color: #fdfdfd;
 
+.sunnee{
+  background-image: url('../../assets/img/copertina-sunnee.jpg')
+}
+.ecodream{
+  background-image: url('../../assets/img/copertina-ecodream.jpg')
+}
+.dea{
+  background-image: url('../../assets/img/Logo-dea.svg')
+}
+.academy {
+  background-image: url('../../assets/img/copertina-curiosity-academy.svg')
+}
 body { 
     font-family: $font-stack, Arial, Helvetica, sans-serif;
     background-color: $white-color;
@@ -59,9 +64,10 @@ a {
   display: flex;
   justify-content: center;        
   width: auto;
+  text-align: center;
   border-radius: 12px;
       }
-  
+
 .cv{
         display: flex;
         justify-content: center;
@@ -245,7 +251,6 @@ footer{
         --fc-field-hover-bg-color: #96559c;
         --fc-border-hover-color: #DDE0EE;
         --fc-field-hover-text-color: #B3B8D0;
-      
         --fc-border-active-color: $accent-color;
       }
       
@@ -391,7 +396,7 @@ footer{
         box-shadow: 0px 0px 0px 3px hsla(var(--fc-error-hsl), 12%);
       }
       .indietro{
-        margin-bottom: 40px;
+        margin-bottom: 64px;
       }
       
 }

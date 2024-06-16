@@ -1,27 +1,26 @@
 @use 'form';
-@use 'inter';
+// @use 'inter';
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../assets/font/Inter/Inter-VariableFont_slnt\,wght.ttf');
-  src: local('Inter'), url('../font/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+  font-family: 'InterVariable';
+  src: url('/assets/font/Inter/Inter-VariableFont_slnt\,wght.ttf');
 }
 
-* {
-    padding: 0;
-    margin: 50;
-    box-sizing: border-box;
-}
 
 // .inter-typo {
-//     font-family: "Inter", sans-serif;
-//     font-optical-sizing: auto;
-//     font-weight: 400;
-//     font-style: normal;
-//     font-variation-settings:
-//       "slnt" 0;
-//   }
-
+  //     font-family: "Inter", sans-serif;
+  //     font-optical-sizing: auto;
+  //     font-weight: 400;
+  //     font-style: normal;
+  //     font-variation-settings:
+  //       "slnt" 0;
+  //   }
+  
+  * {
+      padding: 0;
+      margin: 50;
+      box-sizing: border-box;
+  }
 $font-stack: 'Inter', sans-serif;
 $accent-color: #6000F0;
 $accent-dark: #8d165e;
@@ -42,11 +41,13 @@ $white-color: #fdfdfd;
 .academy {
   background-image: url('../../assets/img/copertina-curiosity-academy.svg')
 }
+
 body { 
-    font-family: $font-stack, Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     background-color: $white-color;
     font-size: 16px;
 }
+
 a {
     text-decoration: none;
     color: $black-color;

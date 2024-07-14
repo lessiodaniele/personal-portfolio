@@ -5,16 +5,6 @@
   font-family: 'InterVariable';
   src: url('/assets/font/Inter/Inter-VariableFont_slnt\,wght.ttf');
 }
-
-
-// .inter-typo {
-  //     font-family: "Inter", sans-serif;
-  //     font-optical-sizing: auto;
-  //     font-weight: 400;
-  //     font-style: normal;
-  //     font-variation-settings:
-  //       "slnt" 0;
-  //   }
   
   * {
       padding: 0;
@@ -112,9 +102,6 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
         align-items: center;
         display: flex;
         gap: 24px;
-        // .toggle-dark {
-        //     aspect-ratio: 1;
-        //     width: 25px;
     }
 }
 
@@ -132,13 +119,13 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
             .tag-1 {
                 color: $primary-color;
                 border: 2px, solid $primary-color;
-                border-radius: 12px;
+                border-radius: 4px;
                 padding: 3px;
             }
             .tag-2{
                 color: $secondary-color; 
                 border: 2px, solid $secondary-color;
-                border-radius: 12px;
+                border-radius: 4px;
                 padding: 3px;
                 text-align: center;
             }

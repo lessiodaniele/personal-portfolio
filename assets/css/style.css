@@ -306,13 +306,13 @@ h6 {
 .hero .tags .tag-1 {
   color: #5688F4;
   border: 2px, solid #5688F4;
-  border-radius: 12px;
+  border-radius: 4px;
   padding: 3px;
 }
 .hero .tags .tag-2 {
   color: #9B8DEC;
   border: 2px, solid #9B8DEC;
-  border-radius: 12px;
+  border-radius: 4px;
   padding: 3px;
   text-align: center;
 }

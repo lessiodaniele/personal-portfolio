@@ -8,7 +8,6 @@
   
   * {
       padding: 0;
-      margin: 50;
       box-sizing: border-box;
   }
 $font-stack: 'Inter', sans-serif;
@@ -50,6 +49,7 @@ a {
         }}}
         
 .btn, button{
+  border-style: none;
   background-color: $accent-color;
   font-family: $font-stack;
   color: $white-color;
@@ -57,13 +57,19 @@ a {
   justify-content: center;        
   width: auto;
   text-align: center;
-  border-radius: 12px;
-      }
+  border-radius: 12px;}
+
+button:hover {
+ background-color: #5300cf;
+}
+button:active {
+  background-color: #4800b4;
+}
 
 .cv{
         display: flex;
         justify-content: center;
-  margin-top: 64px;
+        margin-top: 64px;
   
       }
 
@@ -92,16 +98,21 @@ h1{font-size: 3rem;} h2{font-size: 1.8rem;} h3{font-size: 1.2rem;} h4{font-size:
         width: 40px;
     }
     ul{
-        list-style-type: none;
-        padding: 0;
-        margin: 0;  
+      list-style-type: none;
+      padding: 0;
+      margin: 0;  
     }
     .menu-container {
-        width: auto;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        gap: 24px;
+      width: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      gap: 24px;
+      .eng-switch{
+        width: 35px;}
+      .ita-switch{
+        width: 35px;
+      }
     }
 }
 
@@ -274,7 +285,7 @@ footer{
         font-family: "Inter", sans-serif;
         font-size:14px;
         transition: 125ms 
-        background,125ms 
+       // background:125ms 
         color, 125ms box-shadow;
       }
       
